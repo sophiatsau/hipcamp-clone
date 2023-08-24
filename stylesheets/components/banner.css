@@ -1,0 +1,25 @@
+#banner {
+    background-color: var(--banner-background-color);
+    color: white;
+    font-family: Calibre, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 3em;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner__link {
+    color: white;
+}
+
+:root {
+    --banner-background-color: rgb(90,165,248);
+}
