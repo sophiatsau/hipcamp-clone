@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/next-static/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
     <link rel="stylesheet" href="stylesheets/main-styles.css">
     <title>Cool Cammping is Now Hipcamp | Campsites, Caravan Parks, Cabins & Glamping</title>
 </head>
@@ -35,24 +35,33 @@
         </p>
         <form>
             <fieldset class="homepage__search">
-                <span id="search__search">
-                    <input type="search" name="search" id="search">
+                <span class="input-area">
+                    <img class="search-bar__icon" src="images/nav.png" alt="nav pin">
+                    <input type="search" name="search" id="search" placeholder="Search destinations">
+                </span>
+                <span class="input-area">
+                    <img class="search-bar__icon" src="images/calendar.png" alt="calendar logo">
+                    <input type="text" name="date" id="date" placeholder="Add dates" onfocus="this.type='date'" onblur="this.type='text'">
+                </span>
+                <span class="input-area">
+                    <img class="search-bar__icon" src="images/person.png" alt="person logo">
+                    <input type="number" name="guests" id="guests" placeholder="Add guests">
                 </span>
                 <span>
-                    <input type="date">
-                </span>
-                <span>
-                    <input type="number">
-                </span>
-                <span>
-                    <button type="search__button"></button>
+                    <button type="button" class="search__button">
+                        <img class="search-button__icon" src="images/search.png" alt="search icon">
+                        <img class="search-button__icon-shadow" src="images/search2.png" alt="search icon shadow">
+                        <span class="search-bar__button">Search</span>
+                    </button>
                 </span>
             </fieldset>
         </form>
         <div class="homepage__img">
-            <img src="" alt="">
-            <button type="homepage__img__button">Diddylake Shepherd Huts • Bodmin Moor, ENG</button>
-            <button type="homepage__img__button">+ Add to Chrome</button>
+            <img id="campground" src="images/campground.jpg" alt="campground">
+            <div class="homepage__buttons">
+                <button type="button" class="homepage__img__button">Diddylake Shepherd Huts • Bodmin Moor, ENG</button>
+                <button type="button" class="homepage__img__button">+ Add to Chrome</button>
+            </div>
         </div>
     </div>
 </body>

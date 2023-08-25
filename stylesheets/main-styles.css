@@ -14,6 +14,10 @@
     font-family: Calibre, Helvetica, Arial, sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 :root {
     --file-background-color: rgb(243, 242, 239);
 }
